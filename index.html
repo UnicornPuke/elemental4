@@ -7,5 +7,96 @@
     <meta name="viewport" content="height=device-height width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <div id="menu">
+      <div id="expr" style="width: 90vw; margin-left: 4vw; height: 5vh;">
+        <h1 style="margin-top: 3vh;">Make a new element!</h1>
+      </div>
+      <div id="expr" style="width: 90vw; margin-left: 4vw; height: 5vh;">
+        <h1>Color:</h1>
+      </div>
+      <div id="expr" style="width: 90vw; margin-left: 4vw; height: 9vh;">
+        <div class="color" id="c0" style="background-color: rgba(186, 45, 11, .25);" onclick="colorset(0)"></div>
+        <div class="color" id="c1" style="background-color: rgba(220, 104, 36, .25);" onclick="colorset(1)"></div>
+        <div class="color" id="c2" style="background-color: rgba(253, 163, 61, .25);" onclick="colorset(2)"></div>
+        <div class="color" id="c3" style="background-color: rgba(255, 239, 66, .25);" onclick="colorset(3)"></div>
+      </div>
+      <div id="expr" style="width: 90vw; margin-left: 4vw; height: 9vh;">
+        <div class="color" id="c4" style="background-color: rgba(193, 236, 79, .25);" onclick="colorset(4)"></div>
+        <div class="color" id="c5" style="background-color: rgba(130, 233, 92, .25);" onclick="colorset(5)"></div>
+        <div class="color" id="c6" style="background-color: rgba(111, 220, 235, .25);" onclick="colorset(6)"></div>
+        <div class="color" id="c7" style="background-color: rgba(0, 0, 0, .25);" onclick="colorset(7)"></div>
+      </div>
+      <div id="expr" style="width: 90vw; margin-left: 4vw; height: 9vh;">
+        <div class="color" id="c8" style="background-color: rgba(85, 99, 255, .25);" onclick="colorset(8)"></div>
+        <div class="color" id="c9" style="background-color: rgba(182, 99, 255, .25);" onclick="colorset(9)"></div>
+        <div class="color" id="c10" style="background-color: rgba(255, 112, 229, .25);" onclick="colorset(10)"></div>
+        <div class="color" id="c11" style="background-color: rgba(255, 255, 255, .25);" onclick="colorset(11)"></div>
+      </div>
+      <div id="expr" style="width: 90vw; margin-left: 4vw; height: 5vh;">
+        <h1>Name:</h1>
+      </div>
+      <div id="expr" style="width: 90vw; margin-left: 4vw; height: 5vh;">
+        <input name="nameset" id="nameset" oninput="changeprev()" minlength = "1" maxlength="20">
+      </div>
+      <div id="expr" style="width: 90vw; margin-left: 4vw; height: 5vh;">
+        <h1 style="margin-top: 3vh;">Preview:</h1>
+      </div>
+      <div id="expr" style="width: 90vw; margin-left: 4vw; height: 30vh;">
+        <div class="elediv" id="elepreview" style="background: rgba(255, 255, 255, .25); width: 25vh; height: 25vh; margin-left: 0; margin-top: 0; line-height: 25vh;"></div>
+      </div>
+      <div id="expr" style="width: 90vw; margin-left: 4vw; height: 5vh;">
+        <div class="boxy" id="clickity" style="text-align: center; background: rgba(255, 255, 255,.25); margin-left: 0; margin-top: 10vh; line-height: 10vh;" onclick="newele()">
+          <h1 style="margin-top: 0;">Mix!</h1>
+        </div>
+      </div>
+    </div>
+    <div id="elebar">
+      <div id="bar0" class="bars">
+        <div id="ibar0"></div>
+      </div>
+      <div id="bar1" class="bars">
+        <div id="ibar1"></div>
+      </div>
+      <div id="bar2" class="bars">
+        <div id="ibar2"></div>
+      </div>
+      <div id="bar3" class="bars">
+        <div id="ibar3"></div>
+      </div>
+      <div id="bar4" class="bars">
+        <div id="ibar4"></div>
+      </div>
+      <div id="bar5" class="bars">
+        <div id="ibar5"></div>
+      </div>
+      <div id="bar6" class="bars">
+        <div id="ibar6"></div>
+      </div>
+      <div id="bar7" class="bars">
+        <div id="ibar7"></div>
+      </div>
+      <div id="bar8" class="bars">
+        <div id="ibar8"></div>
+      </div>
+      <div id="bar9" class="bars">
+        <div id="ibar9"></div>
+      </div>
+      <div id="bar10" class="bars">
+        <div id="ibar10"></div>
+      </div>
+      <div id="bar11" class="bars">
+        <div id="ibar11"></div>
+      </div>
+      <div id="filler"></div>
+    </div>
+    <div id="expr">
+      <div class="boxy" id="boxy1" ondrop="drop1(event)" ondragover="allowDrop(event)"><span id="interboxy1" style="margin-top: 0; margin-left: 0;"></span></div>
+      <h1 style="float: left; margin-left: 2vw; margin-top: 6vh;">+</h1>
+      <div class="boxy" id="boxy2" ondrop="drop2(event)" ondragover="allowDrop(event)"><span id="interboxy2" style="margin-top: 0; margin-left: 0;"></span></div>
+    </div>
+    <div id="expr" style="margin-top: 4vh;">
+      <div class="boxy" id="boxy3" onclick="exprclick()"><h1 style="margin-top: 0; text-align: center;">Mix!</h1></div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@keyframes byebye {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes biggy {
+    0% {width: 0; height: 98vh; position: absolute; top: 1vh; left: 1vw;}
+    100% {width: 98vw; outline-width: 0px;}
+}
+
+@keyframes smally {
+    0% {width: 98vw; height: 98vh; position: absolute; top: 1vh; left: 1vw;}
+    100% {width: 0vw; outline-width: 2px;}
+}
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: red;
+    transition: background-color 1s
+}
+
+.color {
+    height: 7vh;
+    width: 7vh;
+    border-radius: .5vh;
+    background-color: azure;
+    outline: black solid 2px;
+    transition: background-color 1s;
+    float: left;
+    margin-left: 2vh;
+}
+
+#elebar {
+    min-height: 99vh;
+    width: 40vw;
+    background-color: azure;
+    padding-top: 1vh;
+    max-height: 1000vh;
+    overflow-y: scroll;
+    float: left;
+}
+
+.elediv {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 10px;
+    background: red;
+    text-align: center;
+    margin-left: 1.5vh;
+    line-height: 10vh;
+    margin-top: 1vh;
+    float: left;
+    transition: opacity 1s;
+    outline: black solid 2px;
+}
+
+#boxy3:hover {
+    cursor: pointer;
+}
+
+.break {
+    float: top;
+    height: 7.5vh;
+}
+
+#filler {
+    height: 1vh;
+}
+
+.bars {
+    float: top;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxy {
+    outline: black solid 2px;
+    background-color: azure;
+    border-radius: 10px;
+    height: 10vh;
+    width: 10vh;
+    float: left;
+    margin-top: 4vh;
+}
+
+#elepreview:hover {
+    cursor:default;
+}
+
+#elepreview {
+    transition: background-color 1s
+}
+
+#clickity:hover {
+    cursor:pointer;
+}
+
+#boxy2 {
+    margin-left: 2vw;
+}
+
+.color:hover {
+    cursor: pointer;
+}
+
+#c0, #c4, #c8 {
+    margin-left: 0;
+}
+
+#expr {
+    width: 60vw;
+    height: 10vh;
+    margin-left: 40vw;
+    line-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elediv:hover {
+    cursor: pointer;
+}
+
+#menu {
+    width: 0vw; 
+    height: 98vh; 
+    position: absolute; 
+    top: 1vh; 
+    left: 1vw;
+    outline: black solid 0px;
+    background-color: azure;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#nameset {
+    border-radius: 10px;
+    height: 4vh;
+    width: 12vw;
+    outline: black solid 2px;
+    background-color: azure;
+    font-size: 2vh;
+}
